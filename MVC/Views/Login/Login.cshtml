@@ -12,12 +12,16 @@
             <tr>
                 <td>User Name</td>
                 <td>
-                    @Html.TextBoxFor(m => m.UserName);
+                    @Html.TextBoxFor(m => m.UserName)
+                    @Html.ValidationMessageFor(m => m.UserName)
                 </td>
             </tr>
             <tr>
                 <td>Password</td>
-                <td> @Html.TextBoxFor(m => m.UserPassword);</td>
+                <td>
+                    @Html.TextBoxFor(m => m.UserPassword)
+                    @Html.ValidationMessageFor(m => m.UserPassword)
+                </td>
             </tr>
             <tr>
                 <td colspan="2">
